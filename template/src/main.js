@@ -3,19 +3,10 @@
 import Vue from 'vue';
 import App from './App';
 import FastClick from 'fastclick';
-import VueLazyload from 'vue-lazyload';  // 引入图片懒加载模块
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
 
 Vue.use(Mint);
-
-// error，loading是图片路径, 用require引入
-Vue.use(VueLazyload, {
-    error: require('./assets/404.png'),
-    loading: require('./assets/loading.gif'),
-    attempt: 1
-  }
-);
 
 Vue.config.productionTip = false;
 // 标题
