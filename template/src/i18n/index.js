@@ -1,15 +1,24 @@
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
+import Langs from './langs';
+import { get } from '@/common/js/store';
 
 Vue.use(VueI18n);
 
-const i18n = new VueI18n({
-  locale: 'zhCN',
-  messages: {
-    'en': require('./en.json'),
-    'ja': require('./ja.json'),
-    'zhCN': require('./zhCN.json')
+const messages = {};
+for (let v = 0; v < Langs.length; v++) {
+  // console.log(Langs[v]);
+  var l = Langs[v].lang;
+  try {
+    messages[l] = require('./' + l + '.json');
+  } catch (e) {
+    console.log(e);
   }
+}
+
+const i18n = new VueI18n({
+  locale: get('system', 'local', 'zhCN'),
+  messages
 });
 
 if (module.hot) {
