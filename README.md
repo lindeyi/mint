@@ -20,7 +20,7 @@
 
 
 
-## 项目使用命令
+# 项目使用命令
 
 ``` 
 $ npm install -g vue-cli
@@ -28,15 +28,15 @@ $ npm install -g vue-cli
 $ vue init lindeyi/mint my-project
 
 $ cd my-project
-# install 安装项目目录下使用的第三方组件
-# 如果网不好使用阿里的地址
-# npm install --registry=https://registry.npm.taobao.org
+### install 安装项目目录下使用的第三方组件
+### 如果网不好使用阿里的地址
+### npm install --registry=https://registry.npm.taobao.org
 $ npm install
 
-# 启动开发服务，使用热加载方式 localhost:9090
+### 启动开发服务，使用热加载方式 localhost:9090
 $ npm run dev
 
-# build 打包部署文件
+### build 打包部署文件
 $ npm run build
 
 ```
