@@ -30,7 +30,7 @@ module.exports = {
     },
 	"proxy": {
 	  "type": "confirm",
-      "message": "Add ':8080/test' proxyTable?"
+      "message": "Add ':8080/proxy' proxyTable?"
 	}
   },
   "filters": {
