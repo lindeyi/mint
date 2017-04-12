@@ -10,7 +10,7 @@ export default new Router({
       path: '/',
       name: 'index',
       redirect: '/hello'
-      // component: Index
+	  {{#demo}}
     }, {
       path: '/demo',
       component: (resolve) => require(['@/App.vue'], resolve),
@@ -27,6 +27,7 @@ export default new Router({
          redirect: 'index'
        }
      ]
+		{{/demo}}
    }, { // hello
      path: '/hello',
      component: (resolve) => require(['@/views/hello.vue'], resolve)

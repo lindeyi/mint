@@ -24,17 +24,13 @@ module.exports = {
       "type": "string",
       "message": "Author"
     },
-    "router": {
+    "demo": {
       "type": "confirm",
-      "message": "Install vue-router?"
-    },
-	"i18n": {
-      "type": "confirm",
-      "message": "Install vue-i18n?"
+      "message": "Init demo?"
     }
   },
   "filters": {
-    "src/router/**/*": "router"
+    "src/views/demo/*": "demo"
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };

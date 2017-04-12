@@ -2,7 +2,9 @@
   <div  v-title data-title="hello">
     <h1>hello</h1>
     <p>\{{msg}}</p>
+    {{#demo}}
     <router-link to="/demo">去往demo页 </router-link>
+    {{/demo}}
   </div>
 </template>
 <script>
