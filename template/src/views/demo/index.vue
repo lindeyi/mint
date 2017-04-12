@@ -5,7 +5,7 @@
        <mt-tab-container-item id="主页">
         <h1 class="center">\{{$t("hello.a")}}</h1>
         <div class="margin10">
-          <mt-button class="page-part" size="large" @click.native="gotoPage('detail')" type="primary"> \{{$t("index.btn[0]")}}</mt-button>
+          <mt-button class="page-part" size="large" @click.native="gotoPage('/demo/detail')" type="primary"> \{{$t("index.btn[0]")}}</mt-button>
           <mt-button class="page-part" size="large" @click.native="openConfirm">\{{$t("index.btn[1]")}}</mt-button>
         </div>
        </mt-tab-container-item>

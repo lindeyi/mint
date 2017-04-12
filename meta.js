@@ -27,7 +27,11 @@ module.exports = {
     "demo": {
       "type": "confirm",
       "message": "Init demo?"
-    }
+    },
+	"proxy": {
+	  "type": "confirm",
+      "message": "Add ':8080/demo' proxyTable?"
+	}
   },
   "filters": {
     "src/views/demo/*": "demo"
