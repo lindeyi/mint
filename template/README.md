@@ -8,10 +8,10 @@
 
 ***
 *  vue  (https://cn.vuejs.org/v2/api/#mounted)
-*  vue-cli
-*  vue-resource
 *  vue-router
 *  vuex
+*  axios
+*  vue-i18n
 *  mint.ui
 *  webpack
 

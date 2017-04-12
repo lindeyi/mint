@@ -1,40 +1,71 @@
-# ������Ŀ
+# 介绍项目
 
-> ����Vue.js + Mint.ui + vue-router + vue-i18n + axios ��װ���ƶ��˿��ٿ���ģ�塣
+> 基于Webpack + Vue.js + Mint.ui封装的移动端快速开发模板。
 
-## Documentation
+### 项目技术架构
 
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+***
+*  vue  (https://cn.vuejs.org/v2/api/#mounted)
+*  vue-router
+*  vuex
+*  axios
+*  vue-i18n
+*  mint.ui
+*  webpack
 
-## Usage
+### 备注
+```
+通过`npm`安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/))
+代码编辑器使用ATOM：https://github.com/atom/atom/releases/tag/v1.15.0
 
-``` bash
+
+
+## 项目使用命令
+
+``` 
 $ npm install -g vue-cli
+
 $ vue init lindeyi/mint my-project
+
 $ cd my-project
+# install 安装项目目录下使用的第三方组件
+# 如果网不好使用阿里的地址
+# npm install --registry=https://registry.npm.taobao.org
 $ npm install
+
+# 启动开发服务，使用热加载方式 localhost:9090
 $ npm run dev
-```
 
-If port 9090 is already in use on your machine you must change the port number in `/config/index.js`. Otherwise `npm run dev` will fail.
-
-## What's Included
-
-- `npm run dev`: first-in-class development experience.
-  - Webpack + `vue-loader` for single file Vue components.
-  - State preserving hot-reload
-  - State preserving compilation error overlay
-  - Lint-on-save with ESLint
-  - Source maps
-
-- `npm run build`: Production ready build.
-  - JavaScript minified with [UglifyJS](https://github.com/mishoo/UglifyJS2).
-  - HTML minified with [html-minifier](https://github.com/kangax/html-minifier).
-  - CSS across all components extracted into a single file and minified with [cssnano](https://github.com/ben-eb/cssnano).
-  - All static assets compiled with version hashes for efficient long-term caching, and a production `index.html` is auto-generated with proper URLs to these generated assets.
-  - Use `npm run build --report`to build with bundle size analytics.
-
-Automatically spawns the Selenium server.
+# build 打包部署文件
+$ npm run build
 
 ```
+### 安装注意
+***
+* 首先需要安装node.js环境；
+node.js的官网下载地址(https://nodejs.org/en/download/)
+
+* 其次需要通过npm安装webpack插件；
+$ npm install webpack -g
+webpack中文介绍(http://webpackdoc.com/install.html)
+
+
+###目录结构
+***
+<pre>
+├── build              // 构建服务和webpack配置
+├── config             // 项目不同环境的配置
+├── dist               // 项目build目录
+├── index.html         // 项目入口文件
+├── package.json       // 项目配置文件
+├── src                // 生产目录
+│   ├── assets         // 图片资源
+│   ├── common          // 公共的css js 资源
+│   ├── components     // 各种组件
+│   ├── views          // 各种视图
+│   ├── vuex           // vuex状态管理器
+│   ├── router		 // 路由配置器
+│   ├── i18n		 // 国际化
+│   ├── App.vue         // 主页面 
+│   └── main.js        // Webpack 预编译入口
+</pre>
