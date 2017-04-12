@@ -18,8 +18,7 @@
 通过`npm`安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/))
 代码编辑器使用ATOM：https://github.com/atom/atom/releases/tag/v1.15.0
 
-
-
+```
 # 项目使用命令
 
 ``` 
@@ -69,3 +68,4 @@ webpack中文介绍(http://webpackdoc.com/install.html)
 │   ├── App.vue         // 主页面 
 │   └── main.js        // Webpack 预编译入口
 </pre>
+```
