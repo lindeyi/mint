@@ -1,7 +1,7 @@
 <template>
   <div  v-title data-title="hello">
     <h1>hello</h1>
-    <p>{{msg}}</p>
+    <p>\{{msg}}</p>
     <router-link to="/demo">去往demo页 </router-link>
   </div>
 </template>
