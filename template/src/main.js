@@ -9,16 +9,13 @@ import 'mint-ui/lib/style.css';
 Vue.use(Mint);
 
 Vue.config.productionTip = false;
-// 标题
 Vue.directive('title', {
   inserted: function (el, binding) {
     document.title = el.dataset.title;
   }
 });
-// 加载
 Vue.prototype.$loading = Mint.Indicator;
 Vue.prototype.$message = Mint.MessageBox;
-// 移动端点击延迟问题处理
 FastClick.attach(document.body);
 /* eslint-disable no-new */
 new Vue({
