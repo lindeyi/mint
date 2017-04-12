@@ -3,7 +3,6 @@
 import Vue from 'vue';
 import App from './App';
 import FastClick from 'fastclick';
-import router from './router';
 import VueLazyload from 'vue-lazyload';  // 引入图片懒加载模块
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
@@ -25,16 +24,6 @@ Vue.directive('title', {
     document.title = el.dataset.title;
   }
 });
-router.beforeEach(function (to, from, next) {
-  Mint.Indicator.open();
-  next();
-});
-
-router.afterEach(function (to) {
-  setTimeout(() => {
-      Mint.Indicator.close();
-  }, 500);
-});
 // 加载
 Vue.prototype.$loading = Mint.Indicator;
 Vue.prototype.$message = Mint.MessageBox;
@@ -43,7 +32,6 @@ FastClick.attach(document.body);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   template: '<App/>',
   components: { App }
 });
