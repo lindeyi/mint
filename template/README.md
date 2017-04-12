@@ -4,6 +4,7 @@
 > {{ description }}
 >  是基于webpack + vue2 + MintUI 开发的前端项目
 
+
 ### 项目技术架构
 
 ***
@@ -14,27 +15,33 @@
 *  vue-i18n
 *  mint.ui
 *  webpack
+***
 
 ### 备注
 ```
 通过`npm`安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/))
 代码编辑器使用ATOM：https://github.com/atom/atom/releases/tag/v1.15.0
 
-
-
-## 项目使用命令
+```
+# 项目使用命令
 
 ``` 
+$ npm install -g vue-cli
+
+$ vue init lindeyi/mint my-project
+
+$ cd my-project
+
 # install 安装项目目录下使用的第三方组件
 # 如果网不好使用阿里的地址
 # npm install --registry=https://registry.npm.taobao.org
-npm install
+$ npm install
 
 # 启动开发服务，使用热加载方式 localhost:9090
-npm run dev
+$ npm run dev
 
 # build 打包部署文件
-npm run build
+$ npm run build
 
 ```
 ### 安装注意
@@ -46,9 +53,8 @@ node.js的官网下载地址(https://nodejs.org/en/download/)
 $ npm install webpack -g
 webpack中文介绍(http://webpackdoc.com/install.html)
 
-
-###目录结构
 ***
+# 目录结构
 <pre>
 ├── build              // 构建服务和webpack配置
 ├── config             // 项目不同环境的配置
@@ -67,9 +73,10 @@ webpack中文介绍(http://webpackdoc.com/install.html)
 │   └── main.js        // Webpack 预编译入口
 </pre>
 
+# 代理配置
+<pre>
 # dev proxy settings to set proxyTable （in config/index.js）
 # demo proxy http://127.0.0.1:8080/proxy
-<pre>
  proxyTable: {
        '/proxy': {
           target: 'http://127.0.0.1:8080',
