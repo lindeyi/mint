@@ -52,7 +52,6 @@ webpack中文介绍(http://webpackdoc.com/install.html)
 
 ***
 # 目录结构
-***
 <pre>
 ├── build              // 构建服务和webpack配置
 ├── config             // 项目不同环境的配置
@@ -70,4 +69,3 @@ webpack中文介绍(http://webpackdoc.com/install.html)
 │   ├── App.vue         // 主页面 
 │   └── main.js        // Webpack 预编译入口
 </pre>
-***
