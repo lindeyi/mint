@@ -12,6 +12,7 @@
 *  vue-i18n
 *  mint.ui
 *  webpack
+***
 
 ### 备注
 ```
@@ -27,15 +28,16 @@ $ npm install -g vue-cli
 $ vue init lindeyi/mint my-project
 
 $ cd my-project
-### install 安装项目目录下使用的第三方组件
-### 如果网不好使用阿里的地址
-### npm install --registry=https://registry.npm.taobao.org
+
+# install 安装项目目录下使用的第三方组件
+# 如果网不好使用阿里的地址
+# npm install --registry=https://registry.npm.taobao.org
 $ npm install
 
-### 启动开发服务，使用热加载方式 localhost:9090
+# 启动开发服务，使用热加载方式 localhost:9090
 $ npm run dev
 
-### build 打包部署文件
+# build 打包部署文件
 $ npm run build
 
 ```
@@ -48,8 +50,8 @@ node.js的官网下载地址(https://nodejs.org/en/download/)
 $ npm install webpack -g
 webpack中文介绍(http://webpackdoc.com/install.html)
 
-
-###目录结构
+***
+# 目录结构
 ***
 <pre>
 ├── build              // 构建服务和webpack配置
@@ -68,4 +70,4 @@ webpack中文介绍(http://webpackdoc.com/install.html)
 │   ├── App.vue         // 主页面 
 │   └── main.js        // Webpack 预编译入口
 </pre>
-```
+***
