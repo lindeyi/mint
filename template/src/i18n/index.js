@@ -10,7 +10,7 @@ for (let v = 0; v < Langs.length; v++) {
   // console.log(Langs[v]);
   var l = Langs[v].lang;
   try {
-    messages[l] = require('./' + l + '.json');
+    messages[l] = require('./langs/' + l + '.json');
   } catch (e) {
     console.log(e);
   }
@@ -22,12 +22,13 @@ const i18n = new VueI18n({
 });
 
 if (module.hot) {
-  module.hot.accept(['./en.json', './ja.json', './zhCN.json'], () => {
-    i18n.setLocaleMessage('en', require('./en.json'));
-    i18n.setLocaleMessage('ja', require('./ja.json'));
-    i18n.setLocaleMessage('zhCN', require('./zhCN.json'));
-    console.log('hot reload', this, arguments);
-  });
+  console.log('熱加載....');
+  // module.hot.accept(['./langs/en.json', './langs/ja.json', './langs/zhCN.json'], () => {
+  //   i18n.setLocaleMessage('en', require('./langs/en.json'));
+  //   i18n.setLocaleMessage('ja', require('./langs/ja.json'));
+  //   i18n.setLocaleMessage('zhCN', require('./langs/zhCN.json'));
+  //   console.log('hot reload', this, arguments);
+  // });
 }
 
 export default i18n;
